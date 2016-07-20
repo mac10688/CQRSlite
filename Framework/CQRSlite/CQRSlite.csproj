@@ -52,7 +52,12 @@
     <Reference Include="System.Runtime.Caching" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bus\IHandleRegistrarAsync.cs" />
+    <Compile Include="Bus\InProcessBusAsync.cs" />
     <Compile Include="Cache\CacheRepository.cs" />
+    <Compile Include="Commands\ICommandAsync.cs" />
+    <Compile Include="Commands\ICommandHandlerAsync.cs" />
+    <Compile Include="Commands\ICommandSenderAsync.cs" />
     <Compile Include="Config\IServiceLocator.cs" />
     <Compile Include="Domain\AggregateDescriptor.cs" />
     <Compile Include="Domain\Exception\AggregateOrEventMissingIdException.cs" />
@@ -65,11 +70,22 @@
     <Compile Include="Domain\IRepository.cs" />
     <Compile Include="Domain\ISession.cs" />
     <Compile Include="Domain\Session.cs" />
+    <Compile Include="Events\IEventAsync.cs" />
+    <Compile Include="Events\IEventHandlerAsync.cs" />
     <Compile Include="Events\IEventPublisher.cs" />
+    <Compile Include="Events\IEventPublisherAsync.cs" />
     <Compile Include="Events\IEventStore.cs" />
     <Compile Include="Bus\IHandlerRegistrar.cs" />
     <Compile Include="Commands\ICommandHandler.cs" />
     <Compile Include="Events\IEventHandler.cs" />
+    <Compile Include="Messages\IHandlerAsync.cs" />
+    <Compile Include="Messages\IMessageAsync.cs" />
+    <Compile Include="Query\IQuery.cs" />
+    <Compile Include="Query\IQueryAsync.cs" />
+    <Compile Include="Query\IQueryHandler.cs" />
+    <Compile Include="Query\IQueryHandlerAsync.cs" />
+    <Compile Include="Query\IQueryRetriever.cs" />
+    <Compile Include="Query\IQueryRetrieverAsync.cs" />
     <Compile Include="Snapshots\ISnapshotStore.cs" />
     <Compile Include="Domain\Factories\AggregateFactory.cs" />
     <Compile Include="Snapshots\Snapshot.cs" />
